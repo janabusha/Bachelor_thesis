@@ -69,7 +69,7 @@ def createTable(expGroup, contGroup):  # katra bakterija no faila Apkopotas_Bakt
                     print(newrow)
                     newfile = newfile.append(newrow, ignore_index=True)
 
-    newfile.to_csv(savePath, mode='w', index=False)
+         newfile.to_csv(savePath, mode='w', index=False)
 
 def groupingData(expGroup, contGroup):  # ši metode atgriež datus lasamā veidā un saglabājās gala faila _Apkopotie_dati.csv
     for group in expGroup, contGroup:
@@ -88,6 +88,6 @@ def groupingData(expGroup, contGroup):  # ši metode atgriež datus lasamā veid
             else:
                 grouped = grouped.drop(column, axis=1)
     
-        grouped.to_csv(savepath, mode='w', index=False)
+          grouped.to_csv(savepath, mode='w', index=False)
 
 groupingData('Izpetes_grupa','Kontroles_grupa')
